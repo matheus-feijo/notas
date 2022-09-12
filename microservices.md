@@ -5,14 +5,11 @@
 
 ### Caracterisiticas
 * Cada serviço pode ser desenvolvido,escalado e implatado sem interferir em outros serviços.
-  
 * A comunicação ocorre por meio de chamadas as APIs (sincronas) ou de forma assincrona.
-
 * Cada serviço é desenhado para resolver um problema especifico
   * exemplo: Um microserviço para cadastro de usuario, outro para pagamentos, entre outros.
   * **Obs**: Se começar a ser necessário ter outras responsabilidades, é indicado que se crie um novo serviço.
 * A independência dos serviços faz com que se algum deles tiver algum problema, só afetará determinada parte do fluxo.
-
 
 ### Boas praticas
 * **Estabilidade:**
@@ -76,7 +73,6 @@
 * **Api composition:**
   * Implementar uma consulta definindo um API consumer, que invoca os serviços que possuem os dados e executa uma junção na memória dos resultados.
   !["Api-composition"](assets/api-composition.png)
-
 * **CQRS**(Command Query Responsibility Segregator):
   * Resolve o problema de como Implementar uma consulta que recupera dados de varios serviços em uma arquitetura de microserviços.
   * Ele define um banco de dados somente para leitura, sendo uma replica do "oficial", mantendo essa replica atualizada por meio de eventos.
