@@ -69,10 +69,12 @@
 ### Padrões de gerenciamento de dados
 * Em sistemas distribuidos é importante garantir a consitência dos dados, que estejam com os valroes corretos e que nenhum dado se perca.
 * **Saga** (Estudar)
-  !['Saga'](assets/saga.png)
+
+  !["Saga"](assets/saga.png)
 
 * **Api composition:**
   * Implementar uma consulta definindo um API consumer, que invoca os serviços que possuem os dados e executa uma junção na memória dos resultados.
+ 
   !["Api-composition"](assets/api-composition.png)
 * **CQRS**(Command Query Responsibility Segregator):
   * Resolve o problema de como Implementar uma consulta que recupera dados de varios serviços em uma arquitetura de microserviços.
